@@ -1,0 +1,32 @@
+.MediaList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.PageButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.pageBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #2b2d42;
+  margin: 1rem;
+  border-radius: 40px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  background-color: #edf2f4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pageBtn:hover {
+  cursor: pointer;
+}

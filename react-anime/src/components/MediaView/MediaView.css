@@ -1,0 +1,117 @@
+.mediaView {
+  height: 100vh;
+  width: 100%;
+  min-width: 600px;
+  display: flex;
+  flex-direction: column;
+  background-color: #2b2d42;
+  color: #edf2f4;
+}
+
+.mediaView .banner {
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.mediaView .banner img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.mediaView .content {
+  display: flex;
+  flex-direction: row;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px -14px 22px;
+  z-index: 5;
+  flex-grow: 1;
+}
+
+.mediaView .coverImage {
+  transform: translateY(-70px);
+  margin: 1rem;
+}
+
+.mediaView .coverImage img {
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 6;
+}
+
+.mediaView .words {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+}
+
+.mediaView .title {
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: large;
+  flex-direction: row;
+  display: flex;
+}
+
+.mediaView .subtitle {
+  font-weight: 300;
+  color: #8d99ae;
+}
+
+.mediaView .status {
+  margin-left: 5px;
+  background-color: green;
+  font-weight: 300;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0.15rem;
+  justify-content: space-around;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 14px;
+}
+
+.mediaView .description {
+}
+
+.mediaView .genres {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.genreBadge {
+  margin-left: 5px;
+  background-color: #ef233c;
+  font-weight: 300;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  padding: 0.15rem;
+  justify-content: space-around;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 14px;
+}
+
+.BackBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: #2b2d42;
+  position: absolute;
+  margin: 1rem;
+  border-radius: 40px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #edf2f4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.BackBtn:hover {
+  cursor: pointer;
+}
